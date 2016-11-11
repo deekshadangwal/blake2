@@ -1,0 +1,182 @@
+ 
+****************************************
+Report : hierarchy
+Design : blake2
+Version: J-2014.09-SP2
+Date   : Fri Nov 11 09:24:03 2016
+****************************************
+
+blake2
+    AND2X1                                osu035_stdcells
+    AOI21X1                               osu035_stdcells
+    AOI22X1                               osu035_stdcells
+    DFFPOSX1                              osu035_stdcells
+    INVX1                                 osu035_stdcells
+    INVX2                                 osu035_stdcells
+    INVX4                                 osu035_stdcells
+    MUX2X1                                osu035_stdcells
+    NAND2X1                               osu035_stdcells
+    NAND3X1                               osu035_stdcells
+    NOR2X1                                osu035_stdcells
+    OAI21X1                               osu035_stdcells
+    OR2X1                                 osu035_stdcells
+    OR2X2                                 osu035_stdcells
+    blake2_core
+        AOI21X1                           osu035_stdcells
+        AOI22X1                           osu035_stdcells
+        BUFX4                             osu035_stdcells
+        CLKBUF3                           osu035_stdcells
+        DFFSR                             osu035_stdcells
+        INVX1                             osu035_stdcells
+        INVX2                             osu035_stdcells
+        INVX8                             osu035_stdcells
+        LATCH                             osu035_stdcells
+        NAND2X1                           osu035_stdcells
+        NAND3X1                           osu035_stdcells
+        NOR2X1                            osu035_stdcells
+        OAI21X1                           osu035_stdcells
+        OAI22X1                           osu035_stdcells
+        OR2X1                             osu035_stdcells
+        XOR2X1                            osu035_stdcells
+        blake2_G_0
+            XOR2X1                        osu035_stdcells
+            blake2_G_0_DW01_add_0
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_0_DW01_add_1
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_0_DW01_add_2
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_0_DW01_add_3
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_0_DW01_add_4
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_0_DW01_add_5
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+        blake2_G_1
+            XOR2X1                        osu035_stdcells
+            blake2_G_1_DW01_add_0
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_1_DW01_add_1
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_1_DW01_add_2
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_1_DW01_add_3
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_1_DW01_add_4
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_1_DW01_add_5
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+        blake2_G_2
+            XOR2X1                        osu035_stdcells
+            blake2_G_2_DW01_add_0
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_2_DW01_add_1
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_2_DW01_add_2
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_2_DW01_add_3
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_2_DW01_add_4
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_2_DW01_add_5
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+        blake2_G_3
+            XOR2X1                        osu035_stdcells
+            blake2_G_3_DW01_add_0
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_3_DW01_add_1
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_3_DW01_add_2
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_3_DW01_add_3
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_3_DW01_add_4
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+            blake2_G_3_DW01_add_5
+                FAX1                      osu035_stdcells
+                INVX2                     osu035_stdcells
+                NAND2X1                   osu035_stdcells
+                XOR2X1                    osu035_stdcells
+        blake2_m_select
+            AND2X1                        osu035_stdcells
+            AOI22X1                       osu035_stdcells
+            BUFX4                         osu035_stdcells
+            DFFSR                         osu035_stdcells
+            INVX1                         osu035_stdcells
+            INVX8                         osu035_stdcells
+            MUX2X1                        osu035_stdcells
+            NAND2X1                       osu035_stdcells
+            NAND3X1                       osu035_stdcells
+            NOR2X1                        osu035_stdcells
+            OR2X1                         osu035_stdcells
+            XNOR2X1                       osu035_stdcells
+1

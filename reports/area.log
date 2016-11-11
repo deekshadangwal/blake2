@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : blake2
+Version: J-2014.09-SP2
+Date   : Fri Nov 11 09:24:00 2016
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'blake2' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    osu035_stdcells (File: /fs/student/deeksha/Documents/Projects/dc_blake/src/osu035_stdcells.db)
+
+Number of ports:                           77
+Number of nets:                          3599
+Number of cells:                         3424
+Number of combinational cells:           2395
+Number of sequential cells:              1028
+Number of macros/black boxes:               0
+Number of buf/inv:                       1216
+Number of references:                      15
+
+Combinational area:            4112412.000000
+Buf/Inv area:                   509504.000000
+Noncombinational area:         2204032.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:               6316444.000000
+Total area:                 undefined
+1

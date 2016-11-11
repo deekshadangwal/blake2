@@ -1,0 +1,21 @@
+ 
+****************************************
+Report : resources
+Design : blake2
+Version: J-2014.09-SP2
+Date   : Fri Nov 11 09:24:03 2016
+****************************************
+
+Resource Sharing Report for design blake2 in file
+        /fs/student/deeksha/Documents/Projects/dc_blake/src/blake2.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r73      | DW01_cmp2    | width=8    |               | lte_206              |
+===============================================================================
+
+
+No implementations to report
+1

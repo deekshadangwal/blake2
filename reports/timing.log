@@ -1,0 +1,2482 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : blake2
+Version: J-2014.09-SP2
+Date   : Fri Nov 11 09:24:01 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: osu035_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YS (FAX1)
+                                                          0.61      17.48 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[33] (blake2_G_2_DW01_add_2)
+                                                          0.00      17.48 r
+  core/G2/U228/Y (XOR2X1)                                 0.40      17.88 f
+  core/G2/add_102/B[1] (blake2_G_2_DW01_add_1)            0.00      17.88 f
+  core/G2/add_102/U1_1/YC (FAX1)                          0.39      18.27 f
+  core/G2/add_102/U1_2/YC (FAX1)                          0.35      18.62 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.35      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.38 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.73 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.54 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.89 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.70 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.51 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.86 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.67 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YC (FAX1)                         0.35      34.42 f
+  core/G2/add_102/U1_48/YC (FAX1)                         0.35      34.77 f
+  core/G2/add_102/U1_49/YC (FAX1)                         0.35      35.12 f
+  core/G2/add_102/U1_50/YC (FAX1)                         0.35      35.47 f
+  core/G2/add_102/U1_51/YC (FAX1)                         0.35      35.83 f
+  core/G2/add_102/U1_52/YC (FAX1)                         0.35      36.18 f
+  core/G2/add_102/U1_53/YC (FAX1)                         0.35      36.53 f
+  core/G2/add_102/U1_54/YC (FAX1)                         0.35      36.88 f
+  core/G2/add_102/U1_55/YC (FAX1)                         0.35      37.23 f
+  core/G2/add_102/U1_56/YC (FAX1)                         0.35      37.58 f
+  core/G2/add_102/U1_57/YC (FAX1)                         0.35      37.93 f
+  core/G2/add_102/U1_58/YC (FAX1)                         0.35      38.28 f
+  core/G2/add_102/U1_59/YC (FAX1)                         0.35      38.64 f
+  core/G2/add_102/U1_60/YC (FAX1)                         0.35      38.99 f
+  core/G2/add_102/U1_61/YC (FAX1)                         0.35      39.34 f
+  core/G2/add_102/U1_62/YS (FAX1)                         0.63      39.97 r
+  core/G2/add_102/SUM[62] (blake2_G_2_DW01_add_1)         0.00      39.97 r
+  core/G2/U193/Y (XOR2X1)                                 0.42      40.39 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[38] (blake2_G_2_DW01_add_4)
+                                                          0.00      40.39 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_38/YS (FAX1)
+                                                          0.51      40.90 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[38] (blake2_G_2_DW01_add_4)
+                                                          0.00      40.90 r
+  core/G2/U52/Y (XOR2X1)                                  0.34      41.24 f
+  core/G2/add_112/B[22] (blake2_G_2_DW01_add_0)           0.00      41.24 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.39      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.34 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.69 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.50 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.66 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.82 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.98 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.33 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.60 r
+  core/U7013/Y (OR2X1)                                    0.20      56.80 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.80 r
+  data arrival time                                                 56.80
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                      942.99
+
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YC (FAX1)
+                                                          0.35      17.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_34/YS (FAX1)
+                                                          0.61      17.83 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[34] (blake2_G_2_DW01_add_2)
+                                                          0.00      17.83 r
+  core/G2/U229/Y (XOR2X1)                                 0.40      18.23 f
+  core/G2/add_102/B[2] (blake2_G_2_DW01_add_1)            0.00      18.23 f
+  core/G2/add_102/U1_2/YC (FAX1)                          0.39      18.62 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.35      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.37 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.73 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.53 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.89 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.70 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.50 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.86 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.66 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YC (FAX1)                         0.35      34.42 f
+  core/G2/add_102/U1_48/YC (FAX1)                         0.35      34.77 f
+  core/G2/add_102/U1_49/YC (FAX1)                         0.35      35.12 f
+  core/G2/add_102/U1_50/YC (FAX1)                         0.35      35.47 f
+  core/G2/add_102/U1_51/YC (FAX1)                         0.35      35.83 f
+  core/G2/add_102/U1_52/YC (FAX1)                         0.35      36.18 f
+  core/G2/add_102/U1_53/YC (FAX1)                         0.35      36.53 f
+  core/G2/add_102/U1_54/YC (FAX1)                         0.35      36.88 f
+  core/G2/add_102/U1_55/YC (FAX1)                         0.35      37.23 f
+  core/G2/add_102/U1_56/YC (FAX1)                         0.35      37.58 f
+  core/G2/add_102/U1_57/YC (FAX1)                         0.35      37.93 f
+  core/G2/add_102/U1_58/YC (FAX1)                         0.35      38.28 f
+  core/G2/add_102/U1_59/YC (FAX1)                         0.35      38.63 f
+  core/G2/add_102/U1_60/YC (FAX1)                         0.35      38.99 f
+  core/G2/add_102/U1_61/YC (FAX1)                         0.35      39.34 f
+  core/G2/add_102/U1_62/YS (FAX1)                         0.63      39.97 r
+  core/G2/add_102/SUM[62] (blake2_G_2_DW01_add_1)         0.00      39.97 r
+  core/G2/U193/Y (XOR2X1)                                 0.42      40.39 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[38] (blake2_G_2_DW01_add_4)
+                                                          0.00      40.39 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_38/YS (FAX1)
+                                                          0.51      40.90 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[38] (blake2_G_2_DW01_add_4)
+                                                          0.00      40.90 r
+  core/G2/U52/Y (XOR2X1)                                  0.34      41.24 f
+  core/G2/add_112/B[22] (blake2_G_2_DW01_add_0)           0.00      41.24 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.39      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.34 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.69 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.50 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.66 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.82 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.98 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.33 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.59 r
+  core/U7013/Y (OR2X1)                                    0.20      56.79 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.79 r
+  data arrival time                                                 56.79
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                      943.00
+
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YS (FAX1)
+                                                          0.61      17.48 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[33] (blake2_G_2_DW01_add_2)
+                                                          0.00      17.48 r
+  core/G2/U228/Y (XOR2X1)                                 0.40      17.88 f
+  core/G2/add_102/B[1] (blake2_G_2_DW01_add_1)            0.00      17.88 f
+  core/G2/add_102/U1_1/YC (FAX1)                          0.39      18.27 f
+  core/G2/add_102/U1_2/YC (FAX1)                          0.35      18.62 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.35      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.38 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.73 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.54 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.89 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.70 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.51 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.86 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.67 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YC (FAX1)                         0.35      34.42 f
+  core/G2/add_102/U1_48/YC (FAX1)                         0.35      34.77 f
+  core/G2/add_102/U1_49/YC (FAX1)                         0.35      35.12 f
+  core/G2/add_102/U1_50/YC (FAX1)                         0.35      35.47 f
+  core/G2/add_102/U1_51/YC (FAX1)                         0.35      35.83 f
+  core/G2/add_102/U1_52/YC (FAX1)                         0.35      36.18 f
+  core/G2/add_102/U1_53/YC (FAX1)                         0.35      36.53 f
+  core/G2/add_102/U1_54/YC (FAX1)                         0.35      36.88 f
+  core/G2/add_102/U1_55/YC (FAX1)                         0.35      37.23 f
+  core/G2/add_102/U1_56/YC (FAX1)                         0.35      37.58 f
+  core/G2/add_102/U1_57/YC (FAX1)                         0.35      37.93 f
+  core/G2/add_102/U1_58/YC (FAX1)                         0.35      38.28 f
+  core/G2/add_102/U1_59/YC (FAX1)                         0.35      38.64 f
+  core/G2/add_102/U1_60/YS (FAX1)                         0.63      39.27 r
+  core/G2/add_102/SUM[60] (blake2_G_2_DW01_add_1)         0.00      39.27 r
+  core/G2/U191/Y (XOR2X1)                                 0.42      39.68 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[36] (blake2_G_2_DW01_add_4)
+                                                          0.00      39.68 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_36/YS (FAX1)
+                                                          0.51      40.20 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[36] (blake2_G_2_DW01_add_4)
+                                                          0.00      40.20 r
+  core/G2/U54/Y (XOR2X1)                                  0.34      40.54 f
+  core/G2/add_112/B[20] (blake2_G_2_DW01_add_0)           0.00      40.54 f
+  core/G2/add_112/U1_20/YC (FAX1)                         0.39      40.93 f
+  core/G2/add_112/U1_21/YC (FAX1)                         0.35      41.28 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.35      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.34 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.69 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.50 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.66 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.82 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.98 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.33 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.59 r
+  core/U7013/Y (OR2X1)                                    0.20      56.79 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.79 r
+  data arrival time                                                 56.79
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                      943.00
+
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YS (FAX1)
+                                                          0.61      17.48 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[33] (blake2_G_2_DW01_add_2)
+                                                          0.00      17.48 r
+  core/G2/U228/Y (XOR2X1)                                 0.40      17.88 f
+  core/G2/add_102/B[1] (blake2_G_2_DW01_add_1)            0.00      17.88 f
+  core/G2/add_102/U1_1/YC (FAX1)                          0.39      18.27 f
+  core/G2/add_102/U1_2/YC (FAX1)                          0.35      18.62 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.35      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.38 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.73 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.54 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.89 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.70 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.51 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.86 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.67 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YS (FAX1)                         0.63      34.70 r
+  core/G2/add_102/SUM[47] (blake2_G_2_DW01_add_1)         0.00      34.70 r
+  core/G2/U178/Y (XOR2X1)                                 0.42      35.12 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[23] (blake2_G_2_DW01_add_4)
+                                                          0.00      35.12 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_23/YS (FAX1)
+                                                          0.51      35.63 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[23] (blake2_G_2_DW01_add_4)
+                                                          0.00      35.63 r
+  core/G2/U5/Y (XOR2X1)                                   0.34      35.98 f
+  core/G2/add_112/B[7] (blake2_G_2_DW01_add_0)            0.00      35.98 f
+  core/G2/add_112/U1_7/YC (FAX1)                          0.39      36.37 f
+  core/G2/add_112/U1_8/YC (FAX1)                          0.35      36.72 f
+  core/G2/add_112/U1_9/YC (FAX1)                          0.35      37.07 f
+  core/G2/add_112/U1_10/YC (FAX1)                         0.35      37.42 f
+  core/G2/add_112/U1_11/YC (FAX1)                         0.35      37.77 f
+  core/G2/add_112/U1_12/YC (FAX1)                         0.35      38.12 f
+  core/G2/add_112/U1_13/YC (FAX1)                         0.35      38.47 f
+  core/G2/add_112/U1_14/YC (FAX1)                         0.35      38.82 f
+  core/G2/add_112/U1_15/YC (FAX1)                         0.35      39.18 f
+  core/G2/add_112/U1_16/YC (FAX1)                         0.35      39.53 f
+  core/G2/add_112/U1_17/YC (FAX1)                         0.35      39.88 f
+  core/G2/add_112/U1_18/YC (FAX1)                         0.35      40.23 f
+  core/G2/add_112/U1_19/YC (FAX1)                         0.35      40.58 f
+  core/G2/add_112/U1_20/YC (FAX1)                         0.35      40.93 f
+  core/G2/add_112/U1_21/YC (FAX1)                         0.35      41.28 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.35      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.33 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.68 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.49 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.65 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.81 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.97 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.32 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.59 r
+  core/U7013/Y (OR2X1)                                    0.20      56.79 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.79 r
+  data arrival time                                                 56.79
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                      943.00
+
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YC (FAX1)
+                                                          0.35      17.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_34/YC (FAX1)
+                                                          0.35      17.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_35/YS (FAX1)
+                                                          0.61      18.18 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[35] (blake2_G_2_DW01_add_2)
+                                                          0.00      18.18 r
+  core/G2/U230/Y (XOR2X1)                                 0.40      18.58 f
+  core/G2/add_102/B[3] (blake2_G_2_DW01_add_1)            0.00      18.58 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.39      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.37 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.72 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.53 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.88 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.69 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.50 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.85 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.66 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YC (FAX1)                         0.35      34.42 f
+  core/G2/add_102/U1_48/YC (FAX1)                         0.35      34.77 f
+  core/G2/add_102/U1_49/YC (FAX1)                         0.35      35.12 f
+  core/G2/add_102/U1_50/YC (FAX1)                         0.35      35.47 f
+  core/G2/add_102/U1_51/YC (FAX1)                         0.35      35.82 f
+  core/G2/add_102/U1_52/YC (FAX1)                         0.35      36.18 f
+  core/G2/add_102/U1_53/YC (FAX1)                         0.35      36.53 f
+  core/G2/add_102/U1_54/YC (FAX1)                         0.35      36.88 f
+  core/G2/add_102/U1_55/YC (FAX1)                         0.35      37.23 f
+  core/G2/add_102/U1_56/YC (FAX1)                         0.35      37.58 f
+  core/G2/add_102/U1_57/YC (FAX1)                         0.35      37.93 f
+  core/G2/add_102/U1_58/YC (FAX1)                         0.35      38.28 f
+  core/G2/add_102/U1_59/YC (FAX1)                         0.35      38.63 f
+  core/G2/add_102/U1_60/YC (FAX1)                         0.35      38.98 f
+  core/G2/add_102/U1_61/YC (FAX1)                         0.35      39.34 f
+  core/G2/add_102/U1_62/YS (FAX1)                         0.63      39.97 r
+  core/G2/add_102/SUM[62] (blake2_G_2_DW01_add_1)         0.00      39.97 r
+  core/G2/U193/Y (XOR2X1)                                 0.42      40.39 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[38] (blake2_G_2_DW01_add_4)
+                                                          0.00      40.39 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_38/YS (FAX1)
+                                                          0.51      40.90 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[38] (blake2_G_2_DW01_add_4)
+                                                          0.00      40.90 r
+  core/G2/U52/Y (XOR2X1)                                  0.34      41.24 f
+  core/G2/add_112/B[22] (blake2_G_2_DW01_add_0)           0.00      41.24 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.39      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.33 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.68 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.49 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.65 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.81 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.97 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.32 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.59 r
+  core/U7013/Y (OR2X1)                                    0.20      56.79 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.79 r
+  data arrival time                                                 56.79
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                      943.00
+
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YS (FAX1)
+                                                          0.61      17.48 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[33] (blake2_G_2_DW01_add_2)
+                                                          0.00      17.48 r
+  core/G2/U228/Y (XOR2X1)                                 0.40      17.88 f
+  core/G2/add_102/B[1] (blake2_G_2_DW01_add_1)            0.00      17.88 f
+  core/G2/add_102/U1_1/YC (FAX1)                          0.39      18.27 f
+  core/G2/add_102/U1_2/YC (FAX1)                          0.35      18.62 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.35      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.38 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.73 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.54 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.89 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.70 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.51 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.86 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.67 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YC (FAX1)                         0.35      34.42 f
+  core/G2/add_102/U1_48/YC (FAX1)                         0.35      34.77 f
+  core/G2/add_102/U1_49/YS (FAX1)                         0.63      35.40 r
+  core/G2/add_102/SUM[49] (blake2_G_2_DW01_add_1)         0.00      35.40 r
+  core/G2/U180/Y (XOR2X1)                                 0.42      35.82 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[25] (blake2_G_2_DW01_add_4)
+                                                          0.00      35.82 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_25/YS (FAX1)
+                                                          0.51      36.34 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[25] (blake2_G_2_DW01_add_4)
+                                                          0.00      36.34 r
+  core/G2/U3/Y (XOR2X1)                                   0.34      36.68 f
+  core/G2/add_112/B[9] (blake2_G_2_DW01_add_0)            0.00      36.68 f
+  core/G2/add_112/U1_9/YC (FAX1)                          0.39      37.07 f
+  core/G2/add_112/U1_10/YC (FAX1)                         0.35      37.42 f
+  core/G2/add_112/U1_11/YC (FAX1)                         0.35      37.77 f
+  core/G2/add_112/U1_12/YC (FAX1)                         0.35      38.12 f
+  core/G2/add_112/U1_13/YC (FAX1)                         0.35      38.47 f
+  core/G2/add_112/U1_14/YC (FAX1)                         0.35      38.82 f
+  core/G2/add_112/U1_15/YC (FAX1)                         0.35      39.18 f
+  core/G2/add_112/U1_16/YC (FAX1)                         0.35      39.53 f
+  core/G2/add_112/U1_17/YC (FAX1)                         0.35      39.88 f
+  core/G2/add_112/U1_18/YC (FAX1)                         0.35      40.23 f
+  core/G2/add_112/U1_19/YC (FAX1)                         0.35      40.58 f
+  core/G2/add_112/U1_20/YC (FAX1)                         0.35      40.93 f
+  core/G2/add_112/U1_21/YC (FAX1)                         0.35      41.28 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.35      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.33 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.68 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.49 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.65 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.81 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.97 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.32 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.59 r
+  core/U7013/Y (OR2X1)                                    0.20      56.79 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.79 r
+  data arrival time                                                 56.79
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                      943.00
+
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YS (FAX1)
+                                                          0.61      17.48 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[33] (blake2_G_2_DW01_add_2)
+                                                          0.00      17.48 r
+  core/G2/U228/Y (XOR2X1)                                 0.40      17.88 f
+  core/G2/add_102/B[1] (blake2_G_2_DW01_add_1)            0.00      17.88 f
+  core/G2/add_102/U1_1/YC (FAX1)                          0.39      18.27 f
+  core/G2/add_102/U1_2/YC (FAX1)                          0.35      18.62 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.35      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.38 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.73 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.54 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.89 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.70 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.51 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.86 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.67 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YC (FAX1)                         0.35      34.42 f
+  core/G2/add_102/U1_48/YC (FAX1)                         0.35      34.77 f
+  core/G2/add_102/U1_49/YC (FAX1)                         0.35      35.12 f
+  core/G2/add_102/U1_50/YC (FAX1)                         0.35      35.47 f
+  core/G2/add_102/U1_51/YC (FAX1)                         0.35      35.83 f
+  core/G2/add_102/U1_52/YS (FAX1)                         0.63      36.46 r
+  core/G2/add_102/SUM[52] (blake2_G_2_DW01_add_1)         0.00      36.46 r
+  core/G2/U183/Y (XOR2X1)                                 0.42      36.88 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[28] (blake2_G_2_DW01_add_4)
+                                                          0.00      36.88 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_28/YS (FAX1)
+                                                          0.51      37.39 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[28] (blake2_G_2_DW01_add_4)
+                                                          0.00      37.39 r
+  core/G2/U63/Y (XOR2X1)                                  0.34      37.73 f
+  core/G2/add_112/B[12] (blake2_G_2_DW01_add_0)           0.00      37.73 f
+  core/G2/add_112/U1_12/YC (FAX1)                         0.39      38.12 f
+  core/G2/add_112/U1_13/YC (FAX1)                         0.35      38.47 f
+  core/G2/add_112/U1_14/YC (FAX1)                         0.35      38.82 f
+  core/G2/add_112/U1_15/YC (FAX1)                         0.35      39.18 f
+  core/G2/add_112/U1_16/YC (FAX1)                         0.35      39.53 f
+  core/G2/add_112/U1_17/YC (FAX1)                         0.35      39.88 f
+  core/G2/add_112/U1_18/YC (FAX1)                         0.35      40.23 f
+  core/G2/add_112/U1_19/YC (FAX1)                         0.35      40.58 f
+  core/G2/add_112/U1_20/YC (FAX1)                         0.35      40.93 f
+  core/G2/add_112/U1_21/YC (FAX1)                         0.35      41.28 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.35      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.33 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.68 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.49 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.65 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.81 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.97 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.32 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.59 r
+  core/U7013/Y (OR2X1)                                    0.20      56.79 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.79 r
+  data arrival time                                                 56.79
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                      943.00
+
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YC (FAX1)
+                                                          0.35      17.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_34/YS (FAX1)
+                                                          0.61      17.83 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[34] (blake2_G_2_DW01_add_2)
+                                                          0.00      17.83 r
+  core/G2/U229/Y (XOR2X1)                                 0.40      18.23 f
+  core/G2/add_102/B[2] (blake2_G_2_DW01_add_1)            0.00      18.23 f
+  core/G2/add_102/U1_2/YC (FAX1)                          0.39      18.62 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.35      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.37 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.73 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.53 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.89 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.70 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.50 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.86 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.66 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YC (FAX1)                         0.35      34.42 f
+  core/G2/add_102/U1_48/YC (FAX1)                         0.35      34.77 f
+  core/G2/add_102/U1_49/YC (FAX1)                         0.35      35.12 f
+  core/G2/add_102/U1_50/YC (FAX1)                         0.35      35.47 f
+  core/G2/add_102/U1_51/YC (FAX1)                         0.35      35.83 f
+  core/G2/add_102/U1_52/YC (FAX1)                         0.35      36.18 f
+  core/G2/add_102/U1_53/YC (FAX1)                         0.35      36.53 f
+  core/G2/add_102/U1_54/YC (FAX1)                         0.35      36.88 f
+  core/G2/add_102/U1_55/YC (FAX1)                         0.35      37.23 f
+  core/G2/add_102/U1_56/YC (FAX1)                         0.35      37.58 f
+  core/G2/add_102/U1_57/YC (FAX1)                         0.35      37.93 f
+  core/G2/add_102/U1_58/YC (FAX1)                         0.35      38.28 f
+  core/G2/add_102/U1_59/YC (FAX1)                         0.35      38.63 f
+  core/G2/add_102/U1_60/YS (FAX1)                         0.63      39.27 r
+  core/G2/add_102/SUM[60] (blake2_G_2_DW01_add_1)         0.00      39.27 r
+  core/G2/U191/Y (XOR2X1)                                 0.42      39.68 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[36] (blake2_G_2_DW01_add_4)
+                                                          0.00      39.68 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_36/YS (FAX1)
+                                                          0.51      40.20 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[36] (blake2_G_2_DW01_add_4)
+                                                          0.00      40.20 r
+  core/G2/U54/Y (XOR2X1)                                  0.34      40.54 f
+  core/G2/add_112/B[20] (blake2_G_2_DW01_add_0)           0.00      40.54 f
+  core/G2/add_112/U1_20/YC (FAX1)                         0.39      40.93 f
+  core/G2/add_112/U1_21/YC (FAX1)                         0.35      41.28 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.35      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.33 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.68 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.49 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.65 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.81 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.97 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.32 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.59 r
+  core/U7013/Y (OR2X1)                                    0.20      56.79 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.79 r
+  data arrival time                                                 56.79
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                      943.00
+
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YS (FAX1)
+                                                          0.61      17.48 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[33] (blake2_G_2_DW01_add_2)
+                                                          0.00      17.48 r
+  core/G2/U228/Y (XOR2X1)                                 0.40      17.88 f
+  core/G2/add_102/B[1] (blake2_G_2_DW01_add_1)            0.00      17.88 f
+  core/G2/add_102/U1_1/YC (FAX1)                          0.39      18.27 f
+  core/G2/add_102/U1_2/YC (FAX1)                          0.35      18.62 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.35      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.38 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.73 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.54 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.89 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.70 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.51 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.86 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.67 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YC (FAX1)                         0.35      34.42 f
+  core/G2/add_102/U1_48/YC (FAX1)                         0.35      34.77 f
+  core/G2/add_102/U1_49/YC (FAX1)                         0.35      35.12 f
+  core/G2/add_102/U1_50/YC (FAX1)                         0.35      35.47 f
+  core/G2/add_102/U1_51/YC (FAX1)                         0.35      35.83 f
+  core/G2/add_102/U1_52/YC (FAX1)                         0.35      36.18 f
+  core/G2/add_102/U1_53/YC (FAX1)                         0.35      36.53 f
+  core/G2/add_102/U1_54/YC (FAX1)                         0.35      36.88 f
+  core/G2/add_102/U1_55/YS (FAX1)                         0.63      37.51 r
+  core/G2/add_102/SUM[55] (blake2_G_2_DW01_add_1)         0.00      37.51 r
+  core/G2/U186/Y (XOR2X1)                                 0.42      37.93 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[31] (blake2_G_2_DW01_add_4)
+                                                          0.00      37.93 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_31/YS (FAX1)
+                                                          0.51      38.44 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[31] (blake2_G_2_DW01_add_4)
+                                                          0.00      38.44 r
+  core/G2/U60/Y (XOR2X1)                                  0.34      38.78 f
+  core/G2/add_112/B[15] (blake2_G_2_DW01_add_0)           0.00      38.78 f
+  core/G2/add_112/U1_15/YC (FAX1)                         0.39      39.18 f
+  core/G2/add_112/U1_16/YC (FAX1)                         0.35      39.53 f
+  core/G2/add_112/U1_17/YC (FAX1)                         0.35      39.88 f
+  core/G2/add_112/U1_18/YC (FAX1)                         0.35      40.23 f
+  core/G2/add_112/U1_19/YC (FAX1)                         0.35      40.58 f
+  core/G2/add_112/U1_20/YC (FAX1)                         0.35      40.93 f
+  core/G2/add_112/U1_21/YC (FAX1)                         0.35      41.28 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.35      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.33 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.68 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.49 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.65 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.81 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.97 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.32 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.59 r
+  core/U7013/Y (OR2X1)                                    0.20      56.79 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.79 r
+  data arrival time                                                 56.79
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                      943.00
+
+
+  Startpoint: core/G_ctr_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/v7_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/G_ctr_reg_reg/CLK (DFFSR)                          0.00 #     0.00 r
+  core/G_ctr_reg_reg/Q (DFFSR)                            0.52       0.52 f
+  core/U9333/Y (CLKBUF3)                                  0.52       1.05 f
+  core/U9332/Y (INVX8)                                    0.06       1.11 r
+  core/U9311/Y (BUFX4)                                    0.15       1.27 r
+  core/U9308/Y (BUFX4)                                    0.16       1.42 r
+  core/U9103/Y (BUFX4)                                    0.20       1.62 r
+  core/U9059/Y (INVX2)                                    0.53       2.15 f
+  core/mselect/state (blake2_m_select)                    0.00       2.15 f
+  core/mselect/U3977/Y (INVX8)                            0.17       2.33 r
+  core/mselect/U3976/Y (INVX8)                            0.05       2.37 f
+  core/mselect/U2198/Y (NOR2X1)                           0.20       2.58 r
+  core/mselect/U2186/Y (NAND2X1)                          0.28       2.86 f
+  core/mselect/U2185/Y (AND2X1)                           0.28       3.14 f
+  core/mselect/U2180/Y (NAND3X1)                          0.16       3.30 r
+  core/mselect/U2179/Y (INVX1)                            0.23       3.53 f
+  core/mselect/U2094/Y (NAND3X1)                          0.72       4.24 r
+  core/mselect/U3618/Y (BUFX4)                            0.24       4.48 r
+  core/mselect/U3565/Y (BUFX4)                            0.32       4.80 r
+  core/mselect/U8532/Y (MUX2X1)                           0.21       5.00 r
+  core/mselect/U8208/Y (MUX2X1)                           0.12       5.12 f
+  core/mselect/U8535/Y (MUX2X1)                           0.14       5.26 r
+  core/mselect/U8210/Y (MUX2X1)                           0.17       5.43 f
+  core/mselect/G2_m0[0] (blake2_m_select)                 0.00       5.43 f
+  core/G2/m0[0] (blake2_G_2)                              0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/B[0] (blake2_G_2_DW01_add_2)
+                                                          0.00       5.43 f
+  core/G2/add_0_root_add_0_root_add_97_2/U2/Y (NAND2X1)
+                                                          0.15       5.58 r
+  core/G2/add_0_root_add_0_root_add_97_2/U3/Y (INVX2)     0.10       5.69 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_1/YC (FAX1)
+                                                          0.33       6.01 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_2/YC (FAX1)
+                                                          0.35       6.36 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_3/YC (FAX1)
+                                                          0.35       6.71 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_4/YC (FAX1)
+                                                          0.35       7.06 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_5/YC (FAX1)
+                                                          0.35       7.41 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_6/YC (FAX1)
+                                                          0.35       7.76 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_7/YC (FAX1)
+                                                          0.35       8.11 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_8/YC (FAX1)
+                                                          0.35       8.46 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_9/YC (FAX1)
+                                                          0.35       8.81 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_10/YC (FAX1)
+                                                          0.35       9.16 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_11/YC (FAX1)
+                                                          0.35       9.51 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_12/YC (FAX1)
+                                                          0.35       9.86 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_13/YC (FAX1)
+                                                          0.35      10.22 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_14/YC (FAX1)
+                                                          0.35      10.57 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_15/YC (FAX1)
+                                                          0.35      10.92 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_16/YC (FAX1)
+                                                          0.35      11.27 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_17/YC (FAX1)
+                                                          0.35      11.62 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_18/YC (FAX1)
+                                                          0.35      11.97 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_19/YC (FAX1)
+                                                          0.35      12.32 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_20/YC (FAX1)
+                                                          0.35      12.67 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_21/YC (FAX1)
+                                                          0.35      13.02 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_22/YC (FAX1)
+                                                          0.35      13.37 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_23/YC (FAX1)
+                                                          0.35      13.72 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_24/YC (FAX1)
+                                                          0.35      14.07 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_25/YC (FAX1)
+                                                          0.35      14.42 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_26/YC (FAX1)
+                                                          0.35      14.77 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_27/YC (FAX1)
+                                                          0.35      15.12 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_28/YC (FAX1)
+                                                          0.35      15.47 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_29/YC (FAX1)
+                                                          0.35      15.82 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_30/YC (FAX1)
+                                                          0.35      16.17 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_31/YC (FAX1)
+                                                          0.35      16.52 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_32/YC (FAX1)
+                                                          0.35      16.87 f
+  core/G2/add_0_root_add_0_root_add_97_2/U1_33/YS (FAX1)
+                                                          0.61      17.48 r
+  core/G2/add_0_root_add_0_root_add_97_2/SUM[33] (blake2_G_2_DW01_add_2)
+                                                          0.00      17.48 r
+  core/G2/U228/Y (XOR2X1)                                 0.40      17.88 f
+  core/G2/add_102/B[1] (blake2_G_2_DW01_add_1)            0.00      17.88 f
+  core/G2/add_102/U1_1/YC (FAX1)                          0.39      18.27 f
+  core/G2/add_102/U1_2/YC (FAX1)                          0.35      18.62 f
+  core/G2/add_102/U1_3/YC (FAX1)                          0.35      18.97 f
+  core/G2/add_102/U1_4/YC (FAX1)                          0.35      19.32 f
+  core/G2/add_102/U1_5/YC (FAX1)                          0.35      19.67 f
+  core/G2/add_102/U1_6/YC (FAX1)                          0.35      20.02 f
+  core/G2/add_102/U1_7/YC (FAX1)                          0.35      20.38 f
+  core/G2/add_102/U1_8/YC (FAX1)                          0.35      20.73 f
+  core/G2/add_102/U1_9/YC (FAX1)                          0.35      21.08 f
+  core/G2/add_102/U1_10/YC (FAX1)                         0.35      21.43 f
+  core/G2/add_102/U1_11/YC (FAX1)                         0.35      21.78 f
+  core/G2/add_102/U1_12/YC (FAX1)                         0.35      22.13 f
+  core/G2/add_102/U1_13/YC (FAX1)                         0.35      22.48 f
+  core/G2/add_102/U1_14/YC (FAX1)                         0.35      22.83 f
+  core/G2/add_102/U1_15/YC (FAX1)                         0.35      23.18 f
+  core/G2/add_102/U1_16/YC (FAX1)                         0.35      23.54 f
+  core/G2/add_102/U1_17/YC (FAX1)                         0.35      23.89 f
+  core/G2/add_102/U1_18/YC (FAX1)                         0.35      24.24 f
+  core/G2/add_102/U1_19/YC (FAX1)                         0.35      24.59 f
+  core/G2/add_102/U1_20/YC (FAX1)                         0.35      24.94 f
+  core/G2/add_102/U1_21/YC (FAX1)                         0.35      25.29 f
+  core/G2/add_102/U1_22/YC (FAX1)                         0.35      25.64 f
+  core/G2/add_102/U1_23/YC (FAX1)                         0.35      25.99 f
+  core/G2/add_102/U1_24/YC (FAX1)                         0.35      26.34 f
+  core/G2/add_102/U1_25/YC (FAX1)                         0.35      26.70 f
+  core/G2/add_102/U1_26/YC (FAX1)                         0.35      27.05 f
+  core/G2/add_102/U1_27/YC (FAX1)                         0.35      27.40 f
+  core/G2/add_102/U1_28/YC (FAX1)                         0.35      27.75 f
+  core/G2/add_102/U1_29/YC (FAX1)                         0.35      28.10 f
+  core/G2/add_102/U1_30/YC (FAX1)                         0.35      28.45 f
+  core/G2/add_102/U1_31/YC (FAX1)                         0.35      28.80 f
+  core/G2/add_102/U1_32/YC (FAX1)                         0.35      29.15 f
+  core/G2/add_102/U1_33/YC (FAX1)                         0.35      29.51 f
+  core/G2/add_102/U1_34/YC (FAX1)                         0.35      29.86 f
+  core/G2/add_102/U1_35/YC (FAX1)                         0.35      30.21 f
+  core/G2/add_102/U1_36/YC (FAX1)                         0.35      30.56 f
+  core/G2/add_102/U1_37/YC (FAX1)                         0.35      30.91 f
+  core/G2/add_102/U1_38/YC (FAX1)                         0.35      31.26 f
+  core/G2/add_102/U1_39/YC (FAX1)                         0.35      31.61 f
+  core/G2/add_102/U1_40/YC (FAX1)                         0.35      31.96 f
+  core/G2/add_102/U1_41/YC (FAX1)                         0.35      32.31 f
+  core/G2/add_102/U1_42/YC (FAX1)                         0.35      32.67 f
+  core/G2/add_102/U1_43/YC (FAX1)                         0.35      33.02 f
+  core/G2/add_102/U1_44/YC (FAX1)                         0.35      33.37 f
+  core/G2/add_102/U1_45/YC (FAX1)                         0.35      33.72 f
+  core/G2/add_102/U1_46/YC (FAX1)                         0.35      34.07 f
+  core/G2/add_102/U1_47/YC (FAX1)                         0.35      34.42 f
+  core/G2/add_102/U1_48/YC (FAX1)                         0.35      34.77 f
+  core/G2/add_102/U1_49/YC (FAX1)                         0.35      35.12 f
+  core/G2/add_102/U1_50/YS (FAX1)                         0.63      35.75 r
+  core/G2/add_102/SUM[50] (blake2_G_2_DW01_add_1)         0.00      35.75 r
+  core/G2/U181/Y (XOR2X1)                                 0.42      36.17 r
+  core/G2/add_0_root_add_0_root_add_107_2/B[26] (blake2_G_2_DW01_add_4)
+                                                          0.00      36.17 r
+  core/G2/add_0_root_add_0_root_add_107_2/U1_26/YS (FAX1)
+                                                          0.51      36.69 r
+  core/G2/add_0_root_add_0_root_add_107_2/SUM[26] (blake2_G_2_DW01_add_4)
+                                                          0.00      36.69 r
+  core/G2/U65/Y (XOR2X1)                                  0.34      37.03 f
+  core/G2/add_112/B[10] (blake2_G_2_DW01_add_0)           0.00      37.03 f
+  core/G2/add_112/U1_10/YC (FAX1)                         0.39      37.42 f
+  core/G2/add_112/U1_11/YC (FAX1)                         0.35      37.77 f
+  core/G2/add_112/U1_12/YC (FAX1)                         0.35      38.12 f
+  core/G2/add_112/U1_13/YC (FAX1)                         0.35      38.47 f
+  core/G2/add_112/U1_14/YC (FAX1)                         0.35      38.82 f
+  core/G2/add_112/U1_15/YC (FAX1)                         0.35      39.18 f
+  core/G2/add_112/U1_16/YC (FAX1)                         0.35      39.53 f
+  core/G2/add_112/U1_17/YC (FAX1)                         0.35      39.88 f
+  core/G2/add_112/U1_18/YC (FAX1)                         0.35      40.23 f
+  core/G2/add_112/U1_19/YC (FAX1)                         0.35      40.58 f
+  core/G2/add_112/U1_20/YC (FAX1)                         0.35      40.93 f
+  core/G2/add_112/U1_21/YC (FAX1)                         0.35      41.28 f
+  core/G2/add_112/U1_22/YC (FAX1)                         0.35      41.63 f
+  core/G2/add_112/U1_23/YC (FAX1)                         0.35      41.98 f
+  core/G2/add_112/U1_24/YC (FAX1)                         0.35      42.33 f
+  core/G2/add_112/U1_25/YC (FAX1)                         0.35      42.68 f
+  core/G2/add_112/U1_26/YC (FAX1)                         0.35      43.04 f
+  core/G2/add_112/U1_27/YC (FAX1)                         0.35      43.39 f
+  core/G2/add_112/U1_28/YC (FAX1)                         0.35      43.74 f
+  core/G2/add_112/U1_29/YC (FAX1)                         0.35      44.09 f
+  core/G2/add_112/U1_30/YC (FAX1)                         0.35      44.44 f
+  core/G2/add_112/U1_31/YC (FAX1)                         0.35      44.79 f
+  core/G2/add_112/U1_32/YC (FAX1)                         0.35      45.14 f
+  core/G2/add_112/U1_33/YC (FAX1)                         0.35      45.49 f
+  core/G2/add_112/U1_34/YC (FAX1)                         0.35      45.85 f
+  core/G2/add_112/U1_35/YC (FAX1)                         0.35      46.20 f
+  core/G2/add_112/U1_36/YC (FAX1)                         0.35      46.55 f
+  core/G2/add_112/U1_37/YC (FAX1)                         0.35      46.90 f
+  core/G2/add_112/U1_38/YC (FAX1)                         0.35      47.25 f
+  core/G2/add_112/U1_39/YC (FAX1)                         0.35      47.60 f
+  core/G2/add_112/U1_40/YC (FAX1)                         0.35      47.95 f
+  core/G2/add_112/U1_41/YC (FAX1)                         0.35      48.30 f
+  core/G2/add_112/U1_42/YC (FAX1)                         0.35      48.65 f
+  core/G2/add_112/U1_43/YC (FAX1)                         0.35      49.01 f
+  core/G2/add_112/U1_44/YC (FAX1)                         0.35      49.36 f
+  core/G2/add_112/U1_45/YC (FAX1)                         0.35      49.71 f
+  core/G2/add_112/U1_46/YC (FAX1)                         0.35      50.06 f
+  core/G2/add_112/U1_47/YC (FAX1)                         0.35      50.41 f
+  core/G2/add_112/U1_48/YC (FAX1)                         0.35      50.76 f
+  core/G2/add_112/U1_49/YC (FAX1)                         0.35      51.11 f
+  core/G2/add_112/U1_50/YC (FAX1)                         0.35      51.46 f
+  core/G2/add_112/U1_51/YC (FAX1)                         0.35      51.81 f
+  core/G2/add_112/U1_52/YC (FAX1)                         0.35      52.17 f
+  core/G2/add_112/U1_53/YC (FAX1)                         0.35      52.52 f
+  core/G2/add_112/U1_54/YC (FAX1)                         0.35      52.87 f
+  core/G2/add_112/U1_55/YC (FAX1)                         0.35      53.22 f
+  core/G2/add_112/U1_56/YC (FAX1)                         0.35      53.57 f
+  core/G2/add_112/U1_57/YC (FAX1)                         0.35      53.92 f
+  core/G2/add_112/U1_58/YC (FAX1)                         0.35      54.27 f
+  core/G2/add_112/U1_59/YC (FAX1)                         0.35      54.62 f
+  core/G2/add_112/U1_60/YC (FAX1)                         0.35      54.97 f
+  core/G2/add_112/U1_61/YC (FAX1)                         0.35      55.32 f
+  core/G2/add_112/U1_62/YC (FAX1)                         0.35      55.68 f
+  core/G2/add_112/U1_63/YS (FAX1)                         0.52      56.20 r
+  core/G2/add_112/SUM[63] (blake2_G_2_DW01_add_0)         0.00      56.20 r
+  core/G2/U130/Y (XOR2X1)                                 0.14      56.34 r
+  core/G2/b_prim[0] (blake2_G_2)                          0.00      56.34 r
+  core/U7015/Y (INVX1)                                    0.14      56.48 f
+  core/U7014/Y (OAI22X1)                                  0.12      56.59 r
+  core/U7013/Y (OR2X1)                                    0.20      56.79 r
+  core/v7_reg_reg[0]/D (DFFSR)                            0.00      56.79 r
+  data arrival time                                                 56.79
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  core/v7_reg_reg[0]/CLK (DFFSR)                          0.00    1000.00 r
+  library setup time                                     -0.21     999.79
+  data required time                                               999.79
+  --------------------------------------------------------------------------
+  data required time                                               999.79
+  data arrival time                                                -56.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                      943.00
+
+
+1
