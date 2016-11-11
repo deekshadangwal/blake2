@@ -1,0 +1,20 @@
+read_verilog blake2.v
+# High-level synthesis
+hierarchy -top blake2
+
+# High-level synthesis
+proc; memory; opt; fsm; opt
+# Map to internal cell library
+techmap; opt
+
+# Map register flops
+dfflibmap -liberty /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib
+opt
+
+# Map combinatorial cells
+abc -liberty /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib
+flatten
+# Cleanup
+opt
+clean
+write_blif -buf BUFX2 A Y blake2_mapped.blif
